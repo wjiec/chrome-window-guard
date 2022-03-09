@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es5",
+    "lib": ["es2015"],
+
+    /* Modules */
+    "module": "esnext",
+    "moduleResolution": "node",
+
+    /* JavaScript Support */
+    "allowJs": false,
+    "checkJs": false,
+
+    /* Emit */
+    "removeComments": true,
+    "importHelpers": true,
+    "noEmitHelpers": false,
+
+    /* Type Checking */
+    "strict": true,
+    "noImplicitAny": true,
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

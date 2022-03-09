@@ -1,0 +1,32 @@
+{
+  "name": "chrome-window-fuse",
+  "version": "1.0.0",
+  "description": "Prevent closing the chrome window until last tab is chrome://newtab",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "type": "module",
+  "main": "dist/background.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "author": "Jayson Wang <jayson@laboys.org>",
+  "keywords": [
+    "chrome-extension"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wjiec/chrome-window-fuse.git"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.1",
+    "@types/chrome": "^0.0.179",
+    "rollup": "^2.70.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.2"
+  }
+}

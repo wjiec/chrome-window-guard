@@ -1,0 +1,13 @@
+{
+  "name": "Dont't Close Window Until Useless",
+  "description": "Prevent closing the chrome window until last tab is chrome://newtab",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": ["tabs"]
+}
