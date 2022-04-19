@@ -1,6 +1,6 @@
 {
-  "name": "Dont't Close Window Until Useless",
-  "description": "Prevent closing the chrome window until last tab is chrome://newtab",
+  "name": "Chrome Window Guard",
+  "description": "Prevent chrome from automatically closing the window when the last tab is closed",
   "version": "1.0.0",
   "manifest_version": 3,
   "background": {
@@ -8,6 +8,9 @@
   },
   "action": {
     "default_icon": "icon.png"
+  },
+  "icons": {
+    "512": "icon.png"
   },
   "permissions": ["tabs"]
 }

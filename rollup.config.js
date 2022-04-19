@@ -9,7 +9,7 @@ export default {
     format: "cjs",
   },
   watch: {
-    include: ["public/**/*", "src/**/*"],
+    include: ["public/**", "src/**"],
   },
   plugins: [
     rollupPluginNodeResolve(),
