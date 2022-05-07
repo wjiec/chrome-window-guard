@@ -61,7 +61,6 @@ const windowGuard = serialization(async () => {
     await chrome.tabs.update(tab.id, { pinned: false });
   }
 
-  console.log({ moreThanTwoTab, firstIsLoadingNotNewTab, firstPinned });
   if (moreThanTwoTab && firstNotLoadingIsNewTab && firstPinned && tab.id) {
     await chrome.tabs.remove(tab.id);
   }
