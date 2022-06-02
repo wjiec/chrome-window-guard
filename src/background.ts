@@ -33,7 +33,10 @@ const serialization = (func: GuardFunction, delay: number): GuardFunction => {
 const NewTabUri = "chrome://newtab";
 
 const windowGuard = serialization(async () => {
-  const [tab, ...rest] = await chrome.tabs.query({ currentWindow: true });
+  const [tab, ...rest] = await chrome.tabs.query({
+    currentWindow: true,
+    windowType: "normal",
+  });
   const onlyOneTab = rest === null || rest.length === 0;
   const isValidOnlyOneTab = onlyOneTab && tab.url !== "";
   const firstPinned = tab.pinned;
