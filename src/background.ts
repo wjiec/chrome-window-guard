@@ -35,6 +35,7 @@ const NewTabUri = "chrome://newtab";
 const windowGuard = serialization(async () => {
   const [tab, ...rest] = await chrome.tabs.query({
     currentWindow: true,
+    // avoid the infinite loop caused by popup window
     windowType: "normal",
   });
   const onlyOneTab = rest === null || rest.length === 0;
